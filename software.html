@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Development | YourTechBrand</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* Preloader */
+    #preloader {
+      background: #0a0a0a;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    .loader {
+      border: 6px solid #333;
+      border-top: 6px solid #16a34a;
+      border-radius: 50%;
+      width: 60px; height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-gray-800 py-4 shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-400">YourTechBrand</a>
+      <ul class="flex space-x-6 text-gray-300">
+        <li><a href="index.html#home" class="hover:text-green-400">Home</a></li>
+        <li><a href="index.html#about" class="hover:text-green-400">About</a></li>
+        <li><a href="index.html#services" class="hover:text-green-400">Services</a></li>
+        <li><a href="index.html#contact" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold text-green-400 mb-4" data-aos="fade-up">Software Development & Engineering</h1>
+      <p class="max-w-2xl mx-auto text-gray-200" data-aos="fade-up" data-aos-delay="200">
+        Building scalable, intelligent, and human-centered digital experiences — one line of code at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">Engineering the Future of Software</h2>
+      <p class="text-gray-300 leading-relaxed">
+        At <strong>YourTechBrand</strong>, software isn’t just code — it’s the digital heartbeat of innovation.  
+        Our development division is built on a philosophy of precision, creativity, and performance.  
+        We specialize in crafting high-performing web, desktop, and mobile applications that solve real-world problems and inspire user confidence.  
+        Whether developing enterprise-grade systems or sleek consumer applications, our engineers focus on quality, scalability, and long-term sustainability.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        We use the latest frameworks like React, Vue, and Angular for front-end development, while our backend stack is powered by Node.js, Python, and .NET Core.  
+        Our team also leverages artificial intelligence and cloud integrations to build smarter, data-driven applications that adapt to users’ needs dynamically.  
+        Every software product we design undergoes rigorous testing, from functionality and performance to security validation, ensuring reliability under any condition.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">User-Centered Design, Agile Execution</h2>
+      <p class="text-gray-300 leading-relaxed">
+        Technology may power the world, but people power technology — and that’s why we place the user at the center of every project.  
+        Through UX research, interactive prototyping, and iterative design, we ensure every interface feels intuitive, engaging, and accessible.  
+        Our UI/UX experts collaborate closely with clients and users alike to transform abstract ideas into seamless digital experiences.  
+        From e-commerce dashboards and AI analytics platforms to mobile learning apps and IoT control systems, our goal is to make technology invisible — so the experience becomes effortless.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        Our agile workflow allows clients to stay involved at every sprint, ensuring transparency, adaptability, and measurable progress.  
+        Using CI/CD pipelines and automated testing, we accelerate delivery without compromising quality.  
+        With this approach, YourTechBrand consistently delivers software products that evolve alongside your vision and business needs.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">Integration, Security & Future Scalability</h2>
+      <p class="text-gray-300 leading-relaxed">
+        Modern enterprises thrive on interconnected systems — and we make that possible through API-driven architectures that enable seamless integration across platforms.  
+        Whether it’s connecting payment gateways, CRMs, IoT devices, or machine learning APIs, our software solutions are built for interoperability.  
+        Security is at the core of every project we handle: encryption standards, secure authentication, and compliance with GDPR and ISO protocols are mandatory across our workflows.  
+        As businesses grow, their needs evolve — and our code evolves with them.  
+        Every solution is modular, allowing effortless scalability without needing a complete rebuild.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        With a focus on performance optimization and cloud-native deployment, our clients benefit from applications that are faster, safer, and smarter — ready to dominate the digital future.
+      </p>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-8 text-center">Software in Motion — Our Visual Story</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Developers working" class="rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Software code" class="rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1587614295999-6c3b0c2a1b9a?auto=format&fit=crop&w=800&q=80" alt="UI design" class="rounded-lg shadow-lg">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    <p>&copy; 2025 YourTechBrand. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Preloader fade-out
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => preloader.style.display = "none", 500);
+    });
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>

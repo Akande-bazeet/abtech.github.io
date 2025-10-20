@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artificial Intelligence | YourTechBrand</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* Preloader */
+    #preloader {
+      background: #0a0a0a;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    .loader {
+      border: 6px solid #333;
+      border-top: 6px solid #22c55e;
+      border-radius: 50%;
+      width: 60px; height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-gray-800 py-4 shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-400">YourTechBrand</a>
+      <ul class="flex space-x-6 text-gray-300">
+        <li><a href="index.html#home" class="hover:text-green-400">Home</a></li>
+        <li><a href="index.html#about" class="hover:text-green-400">About</a></li>
+        <li><a href="index.html#services" class="hover:text-green-400">Services</a></li>
+        <li><a href="index.html#contact" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold text-green-400 mb-4" data-aos="fade-up">Artificial Intelligence Solutions</h1>
+      <p class="max-w-2xl mx-auto text-gray-200" data-aos="fade-up" data-aos-delay="200">
+        Harness the power of intelligence beyond imagination — where data meets decision.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">Transforming Industries with Intelligent Automation</h2>
+      <p class="text-gray-300 leading-relaxed">
+        Artificial Intelligence (AI) has become the foundation of innovation across industries, and at <strong>YourTechBrand</strong>, 
+        we leverage AI to build solutions that empower organizations to make smarter, faster, and more strategic decisions.  
+        Our AI division develops predictive algorithms, natural language models, and deep learning frameworks that allow systems to 
+        understand, interpret, and act — just like humans, but faster and more accurately.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        We specialize in <strong>Computer Vision</strong> systems for manufacturing, healthcare, and retail — enabling machines 
+        to recognize patterns, detect anomalies, and optimize workflows. In customer experience, our <strong>AI Chatbots</strong> 
+        deliver 24/7 human-like support in multiple languages, significantly reducing operational costs.  
+        For businesses seeking predictive insights, our <strong>Machine Learning models</strong> analyze massive datasets 
+        to forecast demand, detect fraud, and personalize marketing strategies.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">Explainable, Ethical, and Scalable AI</h2>
+      <p class="text-gray-300 leading-relaxed">
+        What makes YourTechBrand stand apart is our commitment to building responsible AI. Every model we design follows ethical standards 
+        that ensure fairness, transparency, and accountability. We provide complete visibility into how our systems make decisions 
+        — a crucial factor for compliance, governance, and user trust.  
+        We also believe that AI should serve humanity — not replace it. Therefore, we prioritize hybrid systems that blend human judgment 
+        with machine efficiency, ensuring that our technology complements rather than competes with human expertise.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        Our infrastructure allows clients to scale effortlessly, whether deploying a small model on the edge or integrating a massive AI engine 
+        into cloud environments like AWS, Azure, or Google Cloud. Through our APIs, clients can embed intelligence into their existing systems 
+        without disrupting their workflows.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-4">AI in Action — Real-World Applications</h2>
+      <ul class="list-disc pl-6 text-gray-300 space-y-2">
+        <li>Healthcare: AI-assisted diagnostics detect diseases early using medical imaging data.</li>
+        <li>Finance: Fraud detection algorithms safeguard millions in transactions daily.</li>
+        <li>Retail: Personalized recommendation engines increase customer satisfaction and sales.</li>
+        <li>Manufacturing: Predictive maintenance reduces downtime by up to 40%.</li>
+        <li>Education: Intelligent tutoring systems adapt learning paths for each student.</li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-green-400 mb-8 text-center">AI in Motion — Image Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1677444201840-2c71f9a898a3?auto=format&fit=crop&w=800&q=80" alt="AI System" class="rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Data Visualization" class="rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1664575602434-3b8b8f9a146a?auto=format&fit=crop&w=800&q=80" alt="Machine Learning" class="rounded-lg shadow-lg">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    <p>&copy; 2025 YourTechBrand. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Preloader fade-out
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => preloader.style.display = "none", 500);
+    });
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>

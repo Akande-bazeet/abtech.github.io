@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ABTech</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6f0b4.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #0a192f, #000);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(10,25,47,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+      border: 2px solid #64ffda;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #ccd6f6;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #64ffda;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: rgba(10,25,47,0.98);
+      min-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(100,255,218,0.2);
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background: #112240;
+      color: #64ffda;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Section Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section {
+      padding: 80px 30px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #64ffda;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(100,255,218,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(100,255,218,0.5);
+    }
+
+    footer {
+      background: #020c1b;
+      text-align: center;
+      padding: 30px;
+      color: #64ffda;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo flex items-center gap-3">
+        <img src="abtech_logo.png" alt="ABTech Logo">
+        <h1 class="text-2xl font-bold text-[#64ffda]">ABTech</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="about.html" class="text-[#64ffda]">About</a>
+          <div class="dropdown-content">
+            <a href="team.html">Our Team</a>
+            <a href="ceo.html">About CEO</a>
+            <a href="awards.html">Awards & Recognitions</a>
+          </div>
+        </div>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="product.html">Products</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero -->
+  <section class="hero fade-in relative h-[70vh] flex justify-center items-center text-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80" 
+         class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <h1 class="relative text-5xl font-bold text-[#64ffda] z-10 drop-shadow-lg">About ABTech</h1>
+  </section>
+
+  <!-- 🕰️ History -->
+  <section id="history" class="fade-in">
+    <h2>Our History</h2>
+    <div class="max-w-5xl mx-auto mt-6 space-y-6">
+      <img src="https://images.unsplash.com/photo-1573496782432-869464b0d8b2?auto=format&fit=crop&w=1000&q=80" class="mx-auto w-full md:w-3/4">
+      <p class="text-gray-300 leading-relaxed">
+        ABTech was born in 2021 with a simple dream — to create technology that empowers people and transforms societies.
+        Founded by <span class="text-[#64ffda] font-semibold">Bazeet Akande</span>, it quickly grew from a small innovation hub into a globally recognized
+        tech company. Today, ABTech leads in AI, digital transformation, and sustainable innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🎯 Mission -->
+  <section id="mission" class="fade-in bg-[#0b1a33]">
+    <h2>Our Mission</h2>
+    <div class="max-w-5xl mx-auto mt-6 space-y-6">
+      <img src="https://images.unsplash.com/photo-1521790361493-1f6c62b1e24b?auto=format&fit=crop&w=1000&q=80" class="mx-auto w-full md:w-3/4">
+      <p class="text-gray-300 leading-relaxed">
+        Our mission is to empower the next generation through innovative and inclusive technologies that shape
+        a smarter, safer, and sustainable world.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🌍 Vision -->
+  <section id="vision" class="fade-in">
+    <h2>Our Vision</h2>
+    <div class="max-w-5xl mx-auto mt-6 space-y-6">
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80" class="mx-auto w-full md:w-3/4">
+      <p class="text-gray-300 leading-relaxed">
+        To be a global leader in technology — bridging creativity and artificial intelligence
+        while ensuring excellence, ethics, and equity guide our every move.
+      </p>
+    </div>
+  </section>
+
+  <!-- 💡 Why Choose Us -->
+  <section id="why" class="fade-in bg-[#0b1a33]">
+    <h2>Why Choose ABTech</h2>
+    <div class="max-w-5xl mx-auto mt-6 space-y-6">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1000&q=80" class="mx-auto w-full md:w-3/4">
+      <p class="text-gray-300 leading-relaxed">
+        ABTech stands out through innovation, precision, and trust.  
+        Our diverse team uses AI, data, and design thinking to build solutions that redefine excellence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ❓ FAQ -->
+  <section id="faq" class="fade-in">
+    <h2>Frequently Asked Questions</h2>
+    <div class="max-w-4xl mx-auto mt-6 space-y-6 text-left">
+      <div class="bg-[#112240] p-6 rounded-xl">
+        <h3 class="text-[#64ffda] font-semibold text-lg">What does ABTech specialize in?</h3>
+        <p class="text-gray-300 mt-2">We specialize in AI, web/app development, cloud computing, and tech innovation.</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-xl">
+        <h3 class="text-[#64ffda] font-semibold text-lg">Do you collaborate with other companies?</h3>
+        <p class="text-gray-300 mt-2">Yes, we partner globally with startups and organizations to deliver joint innovations.</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-xl">
+        <h3 class="text-[#64ffda] font-semibold text-lg">Where is ABTech located?</h3>
+        <p class="text-gray-300 mt-2">Our main headquarters are in Nigeria, but we operate globally through digital hubs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✨ Catchy Statement -->
+  <section class="fade-in py-20 bg-[#0b1a33] text-center text-[#64ffda] italic text-xl">
+    “Empowering minds. Building futures. Redefining technology with purpose.”
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>© 2025 ABTech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in Animation on Scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

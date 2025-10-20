@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ABTech</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #0a192f, #000);
+      color: #fff;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(10,25,47,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo img {
+      width: 120px;
+      height: auto;
+      animation: spin 3s linear infinite;
+    }
+    @keyframes spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    nav ul li { position: relative; }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover { color: #64ffda; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: rgba(10,25,47,0.98);
+      min-width: 180px;
+      top: 35px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background-color: #112240;
+      color: #64ffda;
+    }
+    li:hover .dropdown-content { display: block; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      z-index: 2;
+      position: relative;
+      color: #64ffda;
+      font-size: 3rem;
+      text-shadow: 0 0 15px #64ffda;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    section {
+      padding: 80px 60px;
+      transition: all 0.8s ease-in-out;
+    }
+    section h2 {
+      color: #64ffda;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    section p {
+      color: #ccd6f6;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .two-col {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .two-col img {
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #64ffda66;
+    }
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+      background: rgba(17,34,64,0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .faq-item h3 {
+      color: #64ffda;
+      cursor: pointer;
+    }
+    .faq-item p { display: none; }
+    .faq-item.active p { display: block; }
+
+    .catching {
+      text-align: center;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #64ffda;
+      background: rgba(17,34,64,0.5);
+      padding: 40px 0;
+    }
+    footer {
+      background: #020c1b;
+      text-align: center;
+      padding: 30px;
+      color: #64ffda;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="abtech_logo.png" alt="ABTech Logo"></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="about.html">About</a>
+        <div class="dropdown-content">
+          <a href="team.html">Our Team</a>
+          <a href="ceo.html">About CEO</a>
+          <a href="awards.html">Awards & Recognitions</a>
+        </div>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>About ABTech</h1>
+  </section>
+
+  <!-- 🕰️ HISTORY SECTION -->
+  <section id="history">
+    <h2>Our History</h2>
+    <div class="two-col">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="ABTech History">
+      <div>
+        <p>
+          ABTech began as a small but ambitious tech startup in 2021, founded by a group of passionate innovators led by Bazeet Akande.
+          What started as an idea to make technology more human-centered soon evolved into a mission to revolutionize the African tech space.
+          Over the years, ABTech expanded into AI research, software development, and smart solutions, gaining global recognition for its innovation, integrity, and impact.
+        </p>
+        <p>
+          Today, ABTech stands as a beacon of progress — empowering individuals, businesses, and communities through technology that inspires change and fosters growth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎯 MISSION SECTION -->
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+      To empower the next generation through innovative and inclusive technologies that shape a smarter, safer, and more sustainable world.
+    </p>
+  </section>
+
+  <!-- 🌍 VISION SECTION -->
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>
+      To become a global leader in tech innovation — bridging the gap between creativity and artificial intelligence, while upholding the values of excellence, ethics, and equity.
+    </p>
+  </section>
+
+  <!-- 💡 WHY CHOOSE US -->
+  <section id="why">
+    <h2>Why Choose ABTech</h2>
+    <p>
+      At ABTech, we don’t just build solutions — we build trust.  
+      Our team combines creativity, experience, and cutting-edge technology to deliver results that exceed expectations.
+    </p>
+    <div class="two-col">
+      <img src="https://images.unsplash.com/photo-1581093588401-22f1d52b1d0a?auto=format&fit=crop&w=800&q=80" alt="Innovation">
+      <p>
+        We’re driven by impact, inspired by innovation, and guided by integrity.  
+        Whether it's AI systems, software development, or digital branding — we make technology work for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ❓ FAQ SECTION -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>What does ABTech specialize in?</h3>
+        <p>We specialize in Artificial Intelligence, web development, cloud computing, and tech education initiatives.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is ABTech open for collaborations?</h3>
+        <p>Yes! We actively partner with startups, NGOs, and educational institutions to co-create transformative digital solutions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where is ABTech located?</h3>
+        <p>We operate globally, with our primary development hub located in Nigeria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✨ CATCHING STATEMENTS -->
+  <section class="catching">
+    “Empowering minds. Building futures. Redefining technology with purpose.”
+  </section>
+
+  <footer>
+    <p>© 2025 ABTech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item h3");
+    faqItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.parentElement.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>

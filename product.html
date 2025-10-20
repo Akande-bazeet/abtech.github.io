@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourTechBrand | Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5a64d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-sans">
+  <!-- NAVBAR -->
+  <header class="fixed w-full top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between py-4">
+      <div class="flex items-center gap-3">
+        <img src="A_3D-rendered_digital_logo_for_a_company_named_'Yo.png" alt="logo" class="w-12 h-12 rounded-full">
+        <h1 class="text-2xl font-bold text-cyan-400">YourTechBrand</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-cyan-400">Home</a>
+        <a href="about.html" class="hover:text-cyan-400">About</a>
+        <a href="services.html" class="hover:text-cyan-400">Services</a>
+        <a href="blog.html" class="hover:text-cyan-400">Blog</a>
+        <a href="product.html" class="text-cyan-400 font-semibold">Product</a>
+        <a href="testimonials.html" class="hover:text-cyan-400">Testimonials</a>
+        <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-down">
+    <h2 class="text-4xl md:text-6xl font-bold text-cyan-400 mb-4">Discover Our Innovative Tech Solutions</h2>
+    <p class="max-w-3xl text-gray-300 mb-8">
+      YourTechBrand delivers world-class, cutting-edge products that redefine how technology empowers life.
+      From AI to IoT, every creation combines precision engineering and creative design to enhance digital
+      transformation globally.
+    </p>
+    <a href="#products" class="px-6 py-3 bg-cyan-500 rounded-full hover:bg-cyan-400 transition">Explore Products</a>
+  </section>
+
+  <!-- FILTER -->
+  <section id="filter" class="py-12 bg-black/50 text-center border-y border-gray-800" data-aos="zoom-in">
+    <h3 class="text-3xl font-semibold mb-4 text-cyan-400">Filter by Category</h3>
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="filter-btn px-5 py-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">All</button>
+      <button class="filter-btn px-5 py-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">AI</button>
+      <button class="filter-btn px-5 py-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">Web</button>
+      <button class="filter-btn px-5 py-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">Hardware</button>
+      <button class="filter-btn px-5 py-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">Software</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section id="products" class="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-10">
+    <!-- Product 1 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-left">
+      <img src="images/assistant pro.jpg" alt="AI Assistant" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">AI Assistant Pro</h4>
+      <p class="text-gray-400 mb-4">
+        Our AI Assistant Pro revolutionizes personal and enterprise productivity using natural language understanding and adaptive learning algorithms.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-right">
+      <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="CloudSync" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">CloudSync Pro</h4>
+      <p class="text-gray-400 mb-4">
+        CloudSync Pro is your next-generation cloud storage with AI-enhanced file organization and quantum-level encryption security.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-up">
+      <img src="images/smart.jpg" alt="SmartHub" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">SmartHub IoT</h4>
+      <p class="text-gray-400 mb-4">
+        SmartHub IoT integrates all your smart devices into one intelligent platform with real-time automation and voice command.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-left">
+      <img src="images/Quantum.jpg" alt="QuantumEdge" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">QuantumEdge CPU</h4>
+      <p class="text-gray-400 mb-4">
+        The QuantumEdge CPU redefines computing power with nanotech-driven performance and eco-friendly architecture for next-gen AI workloads.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-right">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="CyberShield" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">CyberShield Security Suite</h4>
+      <p class="text-gray-400 mb-4">
+        AI-driven cybersecurity protection designed for global enterprises, providing predictive intrusion detection and zero-day defense.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-up">
+      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6" alt="NeuroChip" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">NeuroChip X</h4>
+      <p class="text-gray-400 mb-4">
+        NeuroChip X fuses biology and technology to boost machine learning and neural interfaces, setting a new standard for smart computing.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition" data-aos="flip-left">
+      <img src="images/vision.jpg" alt="VisionXR" class="rounded-xl mb-5">
+      <h4 class="text-2xl font-bold text-cyan-400 mb-2">VisionXR AR Glasses</h4>
+      <p class="text-gray-400 mb-4">
+        VisionXR merges augmented reality with AI-driven interfaces for seamless digital interaction in education, gaming, and business.
+      </p>
+      <button class="bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-400 transition">Learn More</button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 text-center bg-cyan-500 text-black" data-aos="zoom-in">
+    <h3 class="text-4xl font-bold mb-4">Want to Partner With Us?</h3>
+    <p class="max-w-2xl mx-auto mb-6">
+      Join our innovation journey. Partner with YourTechBrand to experience the fusion of creativity, intelligence, and technological excellence.
+    </p>
+    <a href="contact.html" class="bg-black text-cyan-400 px-8 py-3 rounded-full hover:bg-gray-800 transition">Get in Touch</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-black text-center border-t border-gray-800">
+    <p class="text-gray-500">© 2025 YourTechBrand. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+</body>
+</html>
