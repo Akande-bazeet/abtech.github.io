@@ -59,3 +59,28 @@ body.loaded #preloader {
   to { filter: drop-shadow(0 0 15px #10B981); }
 }
 
+/* Smooth dropdown animation */
+.group:hover ul {
+  display: block;
+  animation: dropdownFade 0.4s ease-in-out;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slower spin for logo */
+.animate-spin-slow {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
